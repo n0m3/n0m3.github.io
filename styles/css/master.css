@@ -65,7 +65,7 @@ p {
 
 /* line 67, ../scss/master.scss */
 .title.st1 {
-  margin-top: 0.35em;
+  margin-top: 0.3em;
   margin-bottom: 0em;
   font-weight: bold;
   line-height: 1;
@@ -78,19 +78,11 @@ p {
   .title.st1 {
     font-size: 4.2rem;
   }
-  /* line 85, ../scss/master.scss */
-  .title.st1 small {
-    font-size: 3.1rem;
-  }
 }
 @media screen and (max-width: 679px) and (min-width: 540px) {
   /* line 67, ../scss/master.scss */
   .title.st1 {
     font-size: 3.8rem;
-  }
-  /* line 93, ../scss/master.scss */
-  .title.st1 small {
-    font-size: 2.7rem;
   }
 }
 @media screen and (max-width: 539px) {
@@ -98,15 +90,9 @@ p {
   .title.st1 {
     font-size: 3rem;
   }
-  /* line 101, ../scss/master.scss */
-  .title.st1 small {
-    display: block;
-    margin-top: 0.6em;
-    font-size: 1.5rem;
-  }
 }
 
-/* line 109, ../scss/master.scss */
+/* line 95, ../scss/master.scss */
 .title.st2 {
   margin-top: 0;
   margin-bottom: 0.25em;
@@ -115,7 +101,7 @@ p {
   line-height: 1.1;
 }
 
-/* line 118, ../scss/master.scss */
+/* line 104, ../scss/master.scss */
 .title.st3 {
   margin-top: 0;
   margin-bottom: 0.2em;
@@ -123,38 +109,38 @@ p {
   font-size: 1.15rem;
   line-height: 1.1;
 }
-/* line 126, ../scss/master.scss */
+/* line 112, ../scss/master.scss */
 .title.st3 span {
   margin-left: 0.4em;
   color: #5badc7;
   font-size: 0.75em;
 }
 @media screen and (max-width: 539px) {
-  /* line 134, ../scss/master.scss */
+  /* line 120, ../scss/master.scss */
   .title.st3 span {
     display: block;
     margin-left: 0;
   }
 }
 
-/* line 142, ../scss/master.scss */
+/* line 128, ../scss/master.scss */
 .txt.st1 {
   margin-bottom: 0.4em;
 }
 
-/* line 148, ../scss/master.scss */
+/* line 134, ../scss/master.scss */
 .txt.st2 p {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 153, ../scss/master.scss */
+/* line 139, ../scss/master.scss */
 .txt.st2 small {
   display: block;
   margin-bottom: 0.5em;
   font-size: 0.75em;
 }
 
-/* line 160, ../scss/master.scss */
+/* line 146, ../scss/master.scss */
 .txt.st3 {
   margin-top: 0.5em;
   margin-bottom: 0.4em;
@@ -162,7 +148,7 @@ p {
   font-weight: bold;
 }
 
-/* line 170, ../scss/master.scss */
+/* line 156, ../scss/master.scss */
 .panels.ly1 {
   margin: 1.5rem 0 2rem;
   display: -webkit-box;
@@ -177,7 +163,7 @@ p {
   align-items: stretch;
   align-content: center;
 }
-/* line 184, ../scss/master.scss */
+/* line 170, ../scss/master.scss */
 .panels.ly1 > div {
   -webkit-box-flex: 1 1 auto;
   -moz-box-flex: 1 1 auto;
@@ -186,47 +172,47 @@ p {
   flex: 1 1 auto;
 }
 @media screen and (min-width: 680px) {
-  /* line 170, ../scss/master.scss */
+  /* line 156, ../scss/master.scss */
   .panels.ly1 {
     flex-wrap: no-wrap;
   }
-  /* line 195, ../scss/master.scss */
+  /* line 181, ../scss/master.scss */
   .panels.ly1 > div:not(:first-of-type) {
     margin-left: 4px;
   }
 }
 @media screen and (max-width: 679px) {
-  /* line 170, ../scss/master.scss */
+  /* line 156, ../scss/master.scss */
   .panels.ly1 {
     flex-wrap: wrap;
   }
-  /* line 203, ../scss/master.scss */
+  /* line 189, ../scss/master.scss */
   .panels.ly1 > div {
     width: 100%;
     margin-top: 4px;
   }
 }
 
-/* line 212, ../scss/master.scss */
+/* line 198, ../scss/master.scss */
 .panels.st1 > div {
   padding: 1.6em 1.4em;
   background: #cde6ee;
   border: 1px solid #bedee9;
 }
 
-/* line 220, ../scss/master.scss */
+/* line 206, ../scss/master.scss */
 .job {
   max-width: 670px;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
-/* line 228, ../scss/master.scss */
+/* line 214, ../scss/master.scss */
 .job p:first-of-type {
   margin-top: 0;
 }
 
-/* line 233, ../scss/master.scss */
+/* line 219, ../scss/master.scss */
 .list.st1 {
   list-style-type: none;
   max-width: 140px;
@@ -234,15 +220,15 @@ p {
   padding-left: 0;
   font-size: 0.9em;
 }
-/* line 240, ../scss/master.scss */
+/* line 226, ../scss/master.scss */
 .list.st1 li {
   display: inline-block;
 }
-/* line 243, ../scss/master.scss */
+/* line 229, ../scss/master.scss */
 .list.st1 li:not(:last-of-type) {
   margin-right: 0.05em;
 }
-/* line 247, ../scss/master.scss */
+/* line 233, ../scss/master.scss */
 .list.st1 li:not(:first-of-type):not(.break):before {
   content: "\00B7";
   display: inline-block;
@@ -252,7 +238,7 @@ p {
   font-size: 0.8em;
 }
 
-/* line 259, ../scss/master.scss */
+/* line 245, ../scss/master.scss */
 .list.st2 {
   list-style-type: none;
   margin: 0 0 0.5em;
@@ -260,28 +246,28 @@ p {
   color: #5badc7;
   font-weight: bold;
 }
-/* line 266, ../scss/master.scss */
+/* line 252, ../scss/master.scss */
 .list.st2 li {
   display: block;
 }
 
-/* line 272, ../scss/master.scss */
+/* line 258, ../scss/master.scss */
 .list.st3 {
   list-style-type: none;
   margin: 0.5em 0;
   padding-left: 0;
-  color: #ff756b;
+  color: #b4aa3c;
   font-weight: bold;
 }
-/* line 279, ../scss/master.scss */
+/* line 265, ../scss/master.scss */
 .list.st3 li {
   display: inline-block;
 }
-/* line 282, ../scss/master.scss */
+/* line 268, ../scss/master.scss */
 .list.st3 li:not(:first-of-type) {
   margin-left: 0.5em;
 }
-/* line 287, ../scss/master.scss */
+/* line 273, ../scss/master.scss */
 .list.st3 a {
   text-decoration: none;
 }
