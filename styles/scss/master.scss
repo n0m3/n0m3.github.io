@@ -1,0 +1,291 @@
+// Colors
+$white:   #FFF;
+$blue1:   #36A198;
+$blue2:   #CDE6EE;
+$pink1:  #ff756b;
+
+// Fonts
+%font1 {
+  font-family: "nimbus-sans",sans-serif;
+}  
+
+%font2 {
+  font-family: "cubano",sans-serif;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+html {
+  height: auto;
+  min-height: 100%;
+  border-left: 20px solid lighten($blue1, 30%);
+  font-size: 16px;
+
+  &:before {
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 25px;
+    border-left: 4px solid lighten($blue1, 45%);
+  }
+}
+
+body {
+  padding: 0.3rem 40px 2rem;
+  color: darken($blue2, 60%);
+  @extend %font1;
+
+
+  a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    &:hover {
+      color: darken($blue2, 30%); 
+    }
+  }
+}
+
+footer {
+  padding-top: 0.5rem;
+}
+
+p {
+  font-size: inherit;
+}
+
+.site-main {
+  max-width: 54rem;
+}
+
+.title.st1 {
+  margin-top: 0.35em;
+  margin-bottom: 0em;
+  @extend %font2;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.01em;
+
+  color: $blue1;
+  $shade:  lighten($blue1, 30%);
+  $offset: $white;
+  text-shadow:
+    -.015em .015em $offset,
+    -.050em .050em $shade; 
+
+  @media screen and (min-width: 680px) {
+    font-size: 4.2rem;
+
+    small {
+      font-size: 3.1rem;
+    }
+  }
+
+  @media screen and (max-width: 679px) and (min-width: 540px) {
+    font-size: 3.8rem;
+    
+    small {
+      font-size: 2.7rem;
+    }
+  }
+
+  @media screen and (max-width: 539px) {
+    font-size: 3rem;
+    
+    small {
+      display: block;
+      margin-top: 0.6em;
+      font-size: 1.5rem;
+    }
+  }     
+}
+
+.title.st2 {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  @extend %font2;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.title.st3 {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  @extend %font1;
+  font-weight: bold;
+  font-size: 1.15rem;
+  line-height: 1.1;
+
+  span {
+    margin-left: 0.4em;
+    color: darken($blue2, 30%);
+    font-size: 0.75em;
+  }
+
+  @media screen and (max-width: 539px) {
+
+    span {
+      display: block;
+      margin-left: 0;
+    }
+  }  
+
+}
+
+.txt.st1 {
+  @extend %font1;
+  margin-bottom: 0.4em;
+}
+
+.txt.st2 {
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  small {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 0.75em;
+  }
+}
+
+.txt.st3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+  @extend %font1;
+  color: darken($blue2, 30%);
+  font-weight: bold;
+}
+
+
+
+.panels.ly1 {
+  margin: 1.5rem 0 2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  align-content: center;
+
+  > div {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;    
+  }
+
+  @media screen and (min-width: 680px) {
+      flex-wrap: no-wrap;
+
+      > div:not(:first-of-type) {
+        margin-left: 4px;       
+      }
+  }
+
+  @media screen and (max-width: 679px) {
+      flex-wrap: wrap;
+
+      > div {
+        width: 100%;
+        margin-top: 4px;
+      }
+  }  
+}
+
+.panels.st1 {
+  
+  > div {
+    padding: 1.6em 1.4em; 
+    background: $blue2; 
+    border: 1px solid darken($blue2, 4%); 
+  }
+}
+
+
+.job {
+  max-width: 670px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  @extend %font1;
+  font-size: 1rem;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.list.st1 {
+  list-style-type: none;
+  max-width: 140px;
+  margin: 0 0 0.6em;
+  padding-left: 0;
+  font-size: 0.9em;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: 0.05em;
+    }
+
+    &:not(:first-of-type):not(.break):before {
+      content: "\00B7";
+      display: inline-block;
+      vertical-align: text-top;
+      margin-top: 2px;
+      margin-right: 0.5em;
+      font-size: 0.8em;
+    }   
+  }
+}
+
+
+.list.st2 {
+  list-style-type: none;
+  margin: 0 0 0.5em;
+  padding-left: 0;
+  color: darken($blue2, 30%);
+  font-weight: bold;  
+
+  li {
+    display: block;
+  }
+}
+
+
+.list.st3 {
+  list-style-type: none;
+  margin: 0.5em 0;
+  padding-left: 0;
+  color: $pink1;
+  font-weight: bold;  
+
+  li {
+    display: inline-block;
+
+    &:not(:first-of-type) {
+      margin-left: 0.5em;
+    }
+  }
+
+  a {
+    text-decoration: none;    
+  }
+}
+
