@@ -63,7 +63,7 @@ p {
   font-weight: normal;
   line-height: 1;
   letter-spacing: 0.005em;
-  color: #36a198;
+  color: #76d1c9;
   text-shadow: -0.015em 0.01em white, -0.045em 0.005em #e8e4ba;
 }
 @media screen and (min-width: 680px) {
@@ -156,7 +156,7 @@ p {
 
 /* line 159, ../scss/master.scss */
 .panels.ly1 {
-  margin: 1.5rem 0 2rem;
+  margin: 1.2rem 0 2rem;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
