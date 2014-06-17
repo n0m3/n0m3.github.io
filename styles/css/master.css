@@ -20,79 +20,78 @@ html {
   height: auto;
   min-height: 100%;
   border-left: 20px solid #95dbd5;
-  font-size: 16px;
-}
-/* line 28, ../scss/master.scss */
-html:before {
-  content: '';
-  height: 100%;
-  display: block;
-  position: absolute;
-  left: 25px;
-  border-left: 4px solid #ceefec;
 }
 
-/* line 38, ../scss/master.scss */
+/* line 28, ../scss/master.scss */
 body {
+  margin: 0 0 0 5px;
   padding: 0.3rem 40px 2rem;
+  border-left: 4px solid #ceefec;
   color: #235666;
 }
-/* line 44, ../scss/master.scss */
+/* line 35, ../scss/master.scss */
 body a {
   color: inherit;
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 49, ../scss/master.scss */
+/* line 40, ../scss/master.scss */
 body a:hover {
   color: #5badc7;
 }
 
-/* line 55, ../scss/master.scss */
+/* line 46, ../scss/master.scss */
 footer {
   padding-top: 0.5rem;
 }
 
-/* line 59, ../scss/master.scss */
+/* line 50, ../scss/master.scss */
 p {
+  margin-top: 0;
   font-size: inherit;
 }
 
-/* line 63, ../scss/master.scss */
+/* line 55, ../scss/master.scss */
 .site-main {
   max-width: 54rem;
 }
 
-/* line 67, ../scss/master.scss */
+/* line 59, ../scss/master.scss */
 .title.st1 {
-  margin-top: 0.3em;
-  margin-bottom: 0em;
-  font-weight: bold;
+  margin-top: 0.4em;
+  margin-bottom: 0.1em;
+  font-weight: normal;
   line-height: 1;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.005em;
   color: #36a198;
-  text-shadow: -0.015em 0.015em white, -0.05em 0.05em #95dbd5;
+  text-shadow: -0.015em 0.01em white, -0.045em 0.005em #e8e4ba;
 }
 @media screen and (min-width: 680px) {
-  /* line 67, ../scss/master.scss */
+  /* line 59, ../scss/master.scss */
   .title.st1 {
     font-size: 4.2rem;
   }
 }
 @media screen and (max-width: 679px) and (min-width: 540px) {
-  /* line 67, ../scss/master.scss */
+  /* line 59, ../scss/master.scss */
   .title.st1 {
     font-size: 3.8rem;
   }
 }
-@media screen and (max-width: 539px) {
-  /* line 67, ../scss/master.scss */
+@media screen and (max-width: 539px) and (min-width: 400px) {
+  /* line 59, ../scss/master.scss */
   .title.st1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  /* line 59, ../scss/master.scss */
+  .title.st1 {
+    font-size: 1.95rem;
   }
 }
 
-/* line 95, ../scss/master.scss */
+/* line 91, ../scss/master.scss */
 .title.st2 {
   margin-top: 0;
   margin-bottom: 0.25em;
@@ -101,7 +100,7 @@ p {
   line-height: 1.1;
 }
 
-/* line 104, ../scss/master.scss */
+/* line 100, ../scss/master.scss */
 .title.st3 {
   margin-top: 0;
   margin-bottom: 0.2em;
@@ -109,46 +108,53 @@ p {
   font-size: 1.15rem;
   line-height: 1.1;
 }
-/* line 112, ../scss/master.scss */
+/* line 108, ../scss/master.scss */
 .title.st3 span {
   margin-left: 0.4em;
   color: #5badc7;
   font-size: 0.75em;
 }
 @media screen and (max-width: 539px) {
-  /* line 120, ../scss/master.scss */
+  /* line 116, ../scss/master.scss */
   .title.st3 span {
     display: block;
     margin-left: 0;
   }
 }
+/* line 122, ../scss/master.scss */
+.title.st3 a {
+  text-decoration: none;
+}
 
 /* line 128, ../scss/master.scss */
 .txt.st1 {
   margin-bottom: 0.4em;
+  line-height: 1.33em;
 }
 
-/* line 134, ../scss/master.scss */
+/* line 135, ../scss/master.scss */
 .txt.st2 p {
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 1.33em;
 }
-/* line 139, ../scss/master.scss */
+/* line 141, ../scss/master.scss */
 .txt.st2 small {
   display: block;
   margin-bottom: 0.5em;
   font-size: 0.75em;
 }
 
-/* line 146, ../scss/master.scss */
+/* line 148, ../scss/master.scss */
 .txt.st3 {
   margin-top: 0.5em;
   margin-bottom: 0.4em;
   color: #5badc7;
+  line-height: 1.33em;
   font-weight: bold;
 }
 
-/* line 156, ../scss/master.scss */
+/* line 159, ../scss/master.scss */
 .panels.ly1 {
   margin: 1.5rem 0 2rem;
   display: -webkit-box;
@@ -163,7 +169,7 @@ p {
   align-items: stretch;
   align-content: center;
 }
-/* line 170, ../scss/master.scss */
+/* line 173, ../scss/master.scss */
 .panels.ly1 > div {
   -webkit-box-flex: 1 1 auto;
   -moz-box-flex: 1 1 auto;
@@ -172,47 +178,51 @@ p {
   flex: 1 1 auto;
 }
 @media screen and (min-width: 680px) {
-  /* line 156, ../scss/master.scss */
+  /* line 159, ../scss/master.scss */
   .panels.ly1 {
     flex-wrap: no-wrap;
   }
-  /* line 181, ../scss/master.scss */
+  /* line 184, ../scss/master.scss */
   .panels.ly1 > div:not(:first-of-type) {
     margin-left: 4px;
   }
 }
 @media screen and (max-width: 679px) {
-  /* line 156, ../scss/master.scss */
+  /* line 159, ../scss/master.scss */
   .panels.ly1 {
     flex-wrap: wrap;
   }
-  /* line 189, ../scss/master.scss */
+  /* line 192, ../scss/master.scss */
   .panels.ly1 > div {
     width: 100%;
     margin-top: 4px;
   }
 }
 
-/* line 198, ../scss/master.scss */
+/* line 201, ../scss/master.scss */
 .panels.st1 > div {
   padding: 1.6em 1.4em;
   background: #cde6ee;
   border: 1px solid #bedee9;
 }
 
-/* line 206, ../scss/master.scss */
+/* line 209, ../scss/master.scss */
 .job {
   max-width: 670px;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
-/* line 214, ../scss/master.scss */
+/* line 217, ../scss/master.scss */
 .job p:first-of-type {
   margin-top: 0;
 }
+/* line 221, ../scss/master.scss */
+.job p a {
+  font-weight: normal;
+}
 
-/* line 219, ../scss/master.scss */
+/* line 226, ../scss/master.scss */
 .list.st1 {
   list-style-type: none;
   max-width: 140px;
@@ -220,15 +230,15 @@ p {
   padding-left: 0;
   font-size: 0.9em;
 }
-/* line 226, ../scss/master.scss */
+/* line 233, ../scss/master.scss */
 .list.st1 li {
   display: inline-block;
 }
-/* line 229, ../scss/master.scss */
+/* line 236, ../scss/master.scss */
 .list.st1 li:not(:last-of-type) {
   margin-right: 0.05em;
 }
-/* line 233, ../scss/master.scss */
+/* line 240, ../scss/master.scss */
 .list.st1 li:not(:first-of-type):not(.break):before {
   content: "\00B7";
   display: inline-block;
@@ -238,7 +248,7 @@ p {
   font-size: 0.8em;
 }
 
-/* line 245, ../scss/master.scss */
+/* line 252, ../scss/master.scss */
 .list.st2 {
   list-style-type: none;
   margin: 0 0 0.5em;
@@ -246,12 +256,12 @@ p {
   color: #5badc7;
   font-weight: bold;
 }
-/* line 252, ../scss/master.scss */
+/* line 259, ../scss/master.scss */
 .list.st2 li {
   display: block;
 }
 
-/* line 258, ../scss/master.scss */
+/* line 265, ../scss/master.scss */
 .list.st3 {
   list-style-type: none;
   margin: 0.5em 0;
@@ -259,15 +269,27 @@ p {
   color: #b4aa3c;
   font-weight: bold;
 }
-/* line 265, ../scss/master.scss */
-.list.st3 li {
-  display: inline-block;
-}
-/* line 268, ../scss/master.scss */
-.list.st3 li:not(:first-of-type) {
-  margin-left: 0.5em;
-}
-/* line 273, ../scss/master.scss */
+/* line 272, ../scss/master.scss */
 .list.st3 a {
   text-decoration: none;
+}
+@media screen and (min-width: 680px) {
+  /* line 278, ../scss/master.scss */
+  .list.st3 li {
+    display: inline-block;
+  }
+  /* line 281, ../scss/master.scss */
+  .list.st3 li:not(:first-of-type) {
+    margin-left: 0.5em;
+  }
+}
+@media screen and (max-width: 679px) {
+  /* line 289, ../scss/master.scss */
+  .list.st3 li {
+    display: block;
+  }
+  /* line 292, ../scss/master.scss */
+  .list.st3 li:not(:last-of-type) {
+    margin-bottom: 0.3em;
+  }
 }

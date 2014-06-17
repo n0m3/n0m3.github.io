@@ -23,23 +23,14 @@ html {
   height: auto;
   min-height: 100%;
   border-left: 20px solid lighten($blue1, 30%);
-  font-size: 16px;
-
-  &:before {
-    content: '';
-    height: 100%;
-    display: block;
-    position: absolute;
-    left: 25px;
-    border-left: 4px solid lighten($blue1, 45%);
-  }
 }
 
 body {
+  margin: 0 0 0 5px;
   padding: 0.3rem 40px 2rem;
+  border-left: 4px solid lighten($blue1, 45%);
   color: darken($blue2, 60%);
-  @extend %font1;
-
+  @extend %font1; 
 
   a {
     color: inherit;
@@ -57,6 +48,7 @@ footer {
 }
 
 p {
+  margin-top: 0;
   font-size: inherit;
 }
 
@@ -65,19 +57,19 @@ p {
 }
 
 .title.st1 {
-  margin-top: 0.3em;
-  margin-bottom: 0em;
+  margin-top: 0.4em;
+  margin-bottom: 0.1em;
   @extend %font2;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.005em;
 
   color: $blue1;
-  $shade:  lighten($blue1, 30%);
+  $shade:  lighten($gold1, 35%);
   $offset: $white;
   text-shadow:
-    -.015em .015em $offset,
-    -.050em .050em $shade; 
+    -.015em .010em $offset,
+    -.045em .005em $shade; 
 
   @media screen and (min-width: 680px) {
     font-size: 4.2rem;
@@ -87,8 +79,12 @@ p {
     font-size: 3.8rem;
   }
 
-  @media screen and (max-width: 539px) {
-    font-size: 3rem;
+  @media screen and (max-width: 539px) and (min-width: 400px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 399px) {
+    font-size: 1.95rem;
   }     
 }
 
@@ -121,19 +117,25 @@ p {
       display: block;
       margin-left: 0;
     }
-  }  
+  } 
+
+  a {
+    text-decoration: none;
+  } 
 
 }
 
 .txt.st1 {
-  @extend %font1;
   margin-bottom: 0.4em;
+  @extend %font1;
+  line-height: 1.33em;
 }
 
 .txt.st2 {
   p {
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 1.33em;
   }
 
   small {
@@ -146,8 +148,9 @@ p {
 .txt.st3 {
   margin-top: 0.5em;
   margin-bottom: 0.4em;
-  @extend %font1;
   color: darken($blue2, 30%);
+  @extend %font1;
+  line-height: 1.33em;
   font-weight: bold;
 }
 
@@ -214,6 +217,10 @@ p {
   p:first-of-type {
     margin-top: 0;
   }
+
+  p a {
+    font-weight: normal;
+  }
 }
 
 .list.st1 {
@@ -262,16 +269,30 @@ p {
   color: $gold1;
   font-weight: bold;  
 
-  li {
-    display: inline-block;
-
-    &:not(:first-of-type) {
-      margin-left: 0.5em;
-    }
-  }
-
   a {
     text-decoration: none;    
   }
+
+  @media screen and (min-width: 680px) {
+
+    li {
+      display: inline-block;
+
+      &:not(:first-of-type) {
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 679px) {
+
+    li {
+      display: block;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0.3em;
+      }
+    }
+  }  
 }
 
