@@ -13,6 +13,22 @@ $gold1:   #B4AA3C;
   font-family: "cubano",sans-serif;
 }
 
+// Tools
+%hide-text {
+  text-indent:-9999px;height:0;margin: 0;
+}
+
+// Screens
+$screen:      only screen;
+$retina-screen:       "#{$screen} and (-webkit-min-device-pixel-ratio: 2),
+                      #{$screen} and (min--moz-device-pixel-ratio: 2),
+                      #{$screen} and (-moz-min-device-pixel-ratio: 2),
+                      #{$screen} and (-o-min-device-pixel-ratio: 2/1),
+                      #{$screen} and (min-device-pixel-ratio: 2),
+                      #{$screen} and (min-resolution: 192dpi),
+                      #{$screen} and (min-resolution: 2dppx)";
+
+// Styles
 *, *:before, *:after {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
@@ -296,3 +312,38 @@ p {
   }  
 }
 
+
+.logo {
+  @extend %hide-text;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-color: lighten($gold1, 16%);
+  background-blend-mode: multiply;
+
+  &:hover {
+    background-color: darken($blue2, 18%);
+  }
+}
+
+.logo.github {
+  background-image: url(/styles/i/GitHub-Mark-32px.png);
+
+  @media #{$retina-screen} {
+    background-image: url(/styles/i/GitHub-Mark-64px.png);    
+  }
+}
+
+.logo.codepen {
+  background-image: url(/styles/i/codepen-32.png);
+
+  @media #{$retina-screen} {
+    background-image: url(/styles/i/codepen-64.png);    
+  }
+}

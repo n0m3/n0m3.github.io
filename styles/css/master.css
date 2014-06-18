@@ -8,55 +8,62 @@ body, .title.st3, .txt.st1, .txt.st3, .job {
   font-family: "cubano",sans-serif;
 }
 
-/* line 16, ../scss/master.scss */
+/* line 17, ../scss/master.scss */
+.logo {
+  text-indent: -9999px;
+  height: 0;
+  margin: 0;
+}
+
+/* line 32, ../scss/master.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 22, ../scss/master.scss */
+/* line 38, ../scss/master.scss */
 html {
   height: auto;
   min-height: 100%;
   border-left: 20px solid #95dbd5;
 }
 
-/* line 28, ../scss/master.scss */
+/* line 44, ../scss/master.scss */
 body {
   margin: 0 0 0 5px;
   padding: 0.3rem 40px 2rem;
   border-left: 4px solid #ceefec;
   color: #235666;
 }
-/* line 35, ../scss/master.scss */
+/* line 51, ../scss/master.scss */
 body a {
   color: inherit;
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 40, ../scss/master.scss */
+/* line 56, ../scss/master.scss */
 body a:hover {
   color: #5badc7;
 }
 
-/* line 46, ../scss/master.scss */
+/* line 62, ../scss/master.scss */
 footer {
   padding-top: 0.5rem;
 }
 
-/* line 50, ../scss/master.scss */
+/* line 66, ../scss/master.scss */
 p {
   margin-top: 0;
   font-size: inherit;
 }
 
-/* line 55, ../scss/master.scss */
+/* line 71, ../scss/master.scss */
 .site-main {
   max-width: 54rem;
 }
 
-/* line 59, ../scss/master.scss */
+/* line 75, ../scss/master.scss */
 .title.st1 {
   margin-top: 0.4em;
   margin-bottom: 0.1em;
@@ -67,31 +74,31 @@ p {
   text-shadow: -0.015em 0.01em white, -0.045em 0.005em #e8e4ba;
 }
 @media screen and (min-width: 680px) {
-  /* line 59, ../scss/master.scss */
+  /* line 75, ../scss/master.scss */
   .title.st1 {
     font-size: 4.2rem;
   }
 }
 @media screen and (max-width: 679px) and (min-width: 540px) {
-  /* line 59, ../scss/master.scss */
+  /* line 75, ../scss/master.scss */
   .title.st1 {
     font-size: 3.8rem;
   }
 }
 @media screen and (max-width: 539px) and (min-width: 400px) {
-  /* line 59, ../scss/master.scss */
+  /* line 75, ../scss/master.scss */
   .title.st1 {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 399px) {
-  /* line 59, ../scss/master.scss */
+  /* line 75, ../scss/master.scss */
   .title.st1 {
     font-size: 1.95rem;
   }
 }
 
-/* line 91, ../scss/master.scss */
+/* line 107, ../scss/master.scss */
 .title.st2 {
   margin-top: 0;
   margin-bottom: 0.25em;
@@ -100,7 +107,7 @@ p {
   line-height: 1.1;
 }
 
-/* line 100, ../scss/master.scss */
+/* line 116, ../scss/master.scss */
 .title.st3 {
   margin-top: 0;
   margin-bottom: 0.2em;
@@ -108,44 +115,44 @@ p {
   font-size: 1.15rem;
   line-height: 1.1;
 }
-/* line 108, ../scss/master.scss */
+/* line 124, ../scss/master.scss */
 .title.st3 span {
   margin-left: 0.4em;
   color: #5badc7;
   font-size: 0.75em;
 }
 @media screen and (max-width: 539px) {
-  /* line 116, ../scss/master.scss */
+  /* line 132, ../scss/master.scss */
   .title.st3 span {
     display: block;
     margin-left: 0;
   }
 }
-/* line 122, ../scss/master.scss */
+/* line 138, ../scss/master.scss */
 .title.st3 a {
   text-decoration: none;
 }
 
-/* line 128, ../scss/master.scss */
+/* line 144, ../scss/master.scss */
 .txt.st1 {
   margin-bottom: 0.4em;
   line-height: 1.33em;
 }
 
-/* line 135, ../scss/master.scss */
+/* line 151, ../scss/master.scss */
 .txt.st2 p {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.33em;
 }
-/* line 141, ../scss/master.scss */
+/* line 157, ../scss/master.scss */
 .txt.st2 small {
   display: block;
   margin-bottom: 0.5em;
   font-size: 0.75em;
 }
 
-/* line 148, ../scss/master.scss */
+/* line 164, ../scss/master.scss */
 .txt.st3 {
   margin-top: 0.5em;
   margin-bottom: 0.4em;
@@ -154,7 +161,7 @@ p {
   font-weight: bold;
 }
 
-/* line 159, ../scss/master.scss */
+/* line 175, ../scss/master.scss */
 .panels.ly1 {
   margin: 1.2rem 0 2rem;
   display: -webkit-box;
@@ -169,7 +176,7 @@ p {
   align-items: stretch;
   align-content: center;
 }
-/* line 173, ../scss/master.scss */
+/* line 189, ../scss/master.scss */
 .panels.ly1 > div {
   -webkit-box-flex: 1 1 auto;
   -moz-box-flex: 1 1 auto;
@@ -178,51 +185,51 @@ p {
   flex: 1 1 auto;
 }
 @media screen and (min-width: 680px) {
-  /* line 159, ../scss/master.scss */
+  /* line 175, ../scss/master.scss */
   .panels.ly1 {
     flex-wrap: no-wrap;
   }
-  /* line 184, ../scss/master.scss */
+  /* line 200, ../scss/master.scss */
   .panels.ly1 > div:not(:first-of-type) {
     margin-left: 4px;
   }
 }
 @media screen and (max-width: 679px) {
-  /* line 159, ../scss/master.scss */
+  /* line 175, ../scss/master.scss */
   .panels.ly1 {
     flex-wrap: wrap;
   }
-  /* line 192, ../scss/master.scss */
+  /* line 208, ../scss/master.scss */
   .panels.ly1 > div {
     width: 100%;
     margin-top: 4px;
   }
 }
 
-/* line 201, ../scss/master.scss */
+/* line 217, ../scss/master.scss */
 .panels.st1 > div {
   padding: 1.6em 1.4em;
   background: #cde6ee;
   border: 1px solid #bedee9;
 }
 
-/* line 209, ../scss/master.scss */
+/* line 225, ../scss/master.scss */
 .job {
   max-width: 670px;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
-/* line 217, ../scss/master.scss */
+/* line 233, ../scss/master.scss */
 .job p:first-of-type {
   margin-top: 0;
 }
-/* line 221, ../scss/master.scss */
+/* line 237, ../scss/master.scss */
 .job p a {
   font-weight: normal;
 }
 
-/* line 226, ../scss/master.scss */
+/* line 242, ../scss/master.scss */
 .list.st1 {
   list-style-type: none;
   max-width: 140px;
@@ -230,15 +237,15 @@ p {
   padding-left: 0;
   font-size: 0.9em;
 }
-/* line 233, ../scss/master.scss */
+/* line 249, ../scss/master.scss */
 .list.st1 li {
   display: inline-block;
 }
-/* line 236, ../scss/master.scss */
+/* line 252, ../scss/master.scss */
 .list.st1 li:not(:last-of-type) {
   margin-right: 0.05em;
 }
-/* line 240, ../scss/master.scss */
+/* line 256, ../scss/master.scss */
 .list.st1 li:not(:first-of-type):not(.break):before {
   content: "\00B7";
   display: inline-block;
@@ -248,7 +255,7 @@ p {
   font-size: 0.8em;
 }
 
-/* line 252, ../scss/master.scss */
+/* line 268, ../scss/master.scss */
 .list.st2 {
   list-style-type: none;
   margin: 0 0 0.5em;
@@ -256,12 +263,12 @@ p {
   color: #5badc7;
   font-weight: bold;
 }
-/* line 259, ../scss/master.scss */
+/* line 275, ../scss/master.scss */
 .list.st2 li {
   display: block;
 }
 
-/* line 265, ../scss/master.scss */
+/* line 281, ../scss/master.scss */
 .list.st3 {
   list-style-type: none;
   margin: 0.5em 0;
@@ -269,27 +276,67 @@ p {
   color: #b4aa3c;
   font-weight: bold;
 }
-/* line 272, ../scss/master.scss */
+/* line 288, ../scss/master.scss */
 .list.st3 a {
   text-decoration: none;
 }
 @media screen and (min-width: 680px) {
-  /* line 278, ../scss/master.scss */
+  /* line 294, ../scss/master.scss */
   .list.st3 li {
     display: inline-block;
   }
-  /* line 281, ../scss/master.scss */
+  /* line 297, ../scss/master.scss */
   .list.st3 li:not(:first-of-type) {
     margin-left: 0.5em;
   }
 }
 @media screen and (max-width: 679px) {
-  /* line 289, ../scss/master.scss */
+  /* line 305, ../scss/master.scss */
   .list.st3 li {
     display: block;
   }
-  /* line 292, ../scss/master.scss */
+  /* line 308, ../scss/master.scss */
   .list.st3 li:not(:last-of-type) {
     margin-bottom: 0.3em;
+  }
+}
+
+/* line 316, ../scss/master.scss */
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-color: #d0c872;
+  background-blend-mode: multiply;
+}
+/* line 330, ../scss/master.scss */
+.logo:hover {
+  background-color: #88c4d7;
+}
+
+/* line 335, ../scss/master.scss */
+.logo.github {
+  background-image: url(/styles/i/GitHub-Mark-32px.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 335, ../scss/master.scss */
+  .logo.github {
+    background-image: url(/styles/i/GitHub-Mark-64px.png);
+  }
+}
+
+/* line 343, ../scss/master.scss */
+.logo.codepen {
+  background-image: url(/styles/i/codepen-32.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 343, ../scss/master.scss */
+  .logo.codepen {
+    background-image: url(/styles/i/codepen-64.png);
   }
 }
