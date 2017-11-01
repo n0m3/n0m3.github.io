@@ -1,167 +1,112 @@
-/* line 8, ../scss/master.scss */
 body, .title.st3, .txt.st1, .txt.st3, .job {
-  font-family: "nimbus-sans",sans-serif;
-}
+  font-family: "nimbus-sans",sans-serif; }
 
-/* line 12, ../scss/master.scss */
 .title.st1, .title.st2 {
-  font-family: "cubano",sans-serif;
-}
+  font-family: "cubano",sans-serif; }
 
-/* line 17, ../scss/master.scss */
 .logo {
   text-indent: -9999px;
   height: 0;
-  margin: 0;
-}
+  margin: 0; }
 
-/* line 32, ../scss/master.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* line 38, ../scss/master.scss */
 html {
   height: auto;
   min-height: 100%;
-  border-left: 20px solid #95dbd5;
-}
+  border-left: 20px solid #95dbd5; }
 
-/* line 44, ../scss/master.scss */
 body {
   margin: 0 0 0 5px;
   padding: 0.3rem 40px 2rem;
   border-left: 4px solid #ceefec;
-  color: #235666;
-}
-/* line 51, ../scss/master.scss */
-body a {
-  color: inherit;
-  font-weight: bold;
-  text-decoration: underline;
-}
-/* line 56, ../scss/master.scss */
-body a:hover {
-  color: #5badc7;
-}
+  color: #235666; }
+  body a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline; }
+    body a:hover {
+      color: #5badc7; }
 
-/* line 62, ../scss/master.scss */
 footer {
-  padding-top: 0.5rem;
-}
+  padding-top: 0.5rem; }
 
-/* line 66, ../scss/master.scss */
 p {
   margin-top: 0;
-  font-size: inherit;
-}
+  font-size: inherit; }
 
-/* line 71, ../scss/master.scss */
 .site-main {
-  max-width: 54rem;
-}
+  max-width: 54rem; }
 
-/* line 75, ../scss/master.scss */
 .title.st1 {
   margin-top: 0.4em;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.25em;
   font-weight: normal;
   line-height: 1;
   letter-spacing: 0.005em;
   color: #76d1c9;
-  text-shadow: -0.015em 0.01em white, -0.045em 0.005em #e8e4ba;
-}
-@media screen and (min-width: 680px) {
-  /* line 75, ../scss/master.scss */
-  .title.st1 {
-    font-size: 4.2rem;
-  }
-}
-@media screen and (max-width: 679px) and (min-width: 540px) {
-  /* line 75, ../scss/master.scss */
-  .title.st1 {
-    font-size: 3.8rem;
-  }
-}
-@media screen and (max-width: 539px) and (min-width: 400px) {
-  /* line 75, ../scss/master.scss */
-  .title.st1 {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 399px) {
-  /* line 75, ../scss/master.scss */
-  .title.st1 {
-    font-size: 1.95rem;
-  }
-}
+  text-shadow: -0.015em 0.01em #FFF, -0.045em 0.005em #e8e4ba; }
+  @media screen and (min-width: 680px) {
+    .title.st1 {
+      font-size: 4.2rem; } }
+  @media screen and (max-width: 679px) and (min-width: 540px) {
+    .title.st1 {
+      font-size: 3.8rem; } }
+  @media screen and (max-width: 539px) and (min-width: 400px) {
+    .title.st1 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 399px) {
+    .title.st1 {
+      font-size: 1.95rem; } }
 
-/* line 107, ../scss/master.scss */
 .title.st2 {
   margin-top: 0;
   margin-bottom: 0.25em;
   font-weight: bold;
   font-size: 1.5rem;
-  line-height: 1.1;
-}
+  line-height: 1.1; }
 
-/* line 116, ../scss/master.scss */
 .title.st3 {
   margin-top: 0;
   margin-bottom: 0.2em;
   font-weight: bold;
   font-size: 1.15rem;
-  line-height: 1.1;
-}
-/* line 124, ../scss/master.scss */
-.title.st3 span {
-  margin-left: 0.4em;
-  color: #5badc7;
-  font-size: 0.75em;
-}
-@media screen and (max-width: 539px) {
-  /* line 132, ../scss/master.scss */
+  line-height: 1.1; }
   .title.st3 span {
-    display: block;
-    margin-left: 0;
-  }
-}
-/* line 138, ../scss/master.scss */
-.title.st3 a {
-  text-decoration: none;
-}
+    margin-left: 0.4em;
+    color: #5badc7;
+    font-size: 0.75em; }
+  @media screen and (max-width: 539px) {
+    .title.st3 span {
+      display: block;
+      margin-left: 0; } }
+  .title.st3 a {
+    text-decoration: none; }
 
-/* line 144, ../scss/master.scss */
 .txt.st1 {
   margin-bottom: 0.4em;
-  line-height: 1.33em;
-}
+  line-height: 1.33em; }
 
-/* line 151, ../scss/master.scss */
 .txt.st2 p {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.33em;
-}
-/* line 157, ../scss/master.scss */
+  line-height: 1.33em; }
+
 .txt.st2 small {
   display: block;
   margin-bottom: 0.5em;
-  font-size: 0.75em;
-}
+  font-size: 0.75em; }
 
-/* line 164, ../scss/master.scss */
 .txt.st3 {
   margin-top: 0.5em;
   margin-bottom: 0.4em;
   color: #5badc7;
   line-height: 1.33em;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-/* line 175, ../scss/master.scss */
 .panels.ly1 {
   margin: 1.2rem 0 2rem;
   display: -webkit-box;
@@ -174,134 +119,86 @@ p {
   justify-content: flex-start;
   -webkit-align-items: stretch;
   align-items: stretch;
-  align-content: center;
-}
-/* line 189, ../scss/master.scss */
-.panels.ly1 > div {
-  -webkit-box-flex: 1 1 auto;
-  -moz-box-flex: 1 1 auto;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-@media screen and (min-width: 680px) {
-  /* line 175, ../scss/master.scss */
-  .panels.ly1 {
-    flex-wrap: no-wrap;
-  }
-  /* line 200, ../scss/master.scss */
-  .panels.ly1 > div:not(:first-of-type) {
-    margin-left: 4px;
-  }
-}
-@media screen and (max-width: 679px) {
-  /* line 175, ../scss/master.scss */
-  .panels.ly1 {
-    flex-wrap: wrap;
-  }
-  /* line 208, ../scss/master.scss */
+  align-content: center; }
   .panels.ly1 > div {
-    width: 100%;
-    margin-top: 4px;
-  }
-}
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+  @media screen and (min-width: 680px) {
+    .panels.ly1 {
+      flex-wrap: no-wrap; }
+      .panels.ly1 > div:not(:first-of-type) {
+        margin-left: 4px; } }
+  @media screen and (max-width: 679px) {
+    .panels.ly1 {
+      flex-wrap: wrap; }
+      .panels.ly1 > div {
+        width: 100%;
+        margin-top: 4px; } }
 
-/* line 217, ../scss/master.scss */
 .panels.st1 > div {
   padding: 1.6em 1.4em;
-  background: #cde6ee;
-  border: 1px solid #bedee9;
-}
+  background: #CDE6EE;
+  border: 1px solid #bedee9; }
 
-/* line 225, ../scss/master.scss */
 .job {
   max-width: 670px;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
-  font-size: 1rem;
-}
-/* line 233, ../scss/master.scss */
-.job p:first-of-type {
-  margin-top: 0;
-}
-/* line 237, ../scss/master.scss */
-.job p a {
-  font-weight: normal;
-}
+  font-size: 1rem; }
+  .job p:first-of-type {
+    margin-top: 0; }
+  .job p a {
+    font-weight: normal; }
 
-/* line 242, ../scss/master.scss */
 .list.st1 {
   list-style-type: none;
-  max-width: 142px;
+  max-width: 140px;
   margin: 0 0 0.6em;
   padding-left: 0;
-  font-size: 0.9em;
-}
-/* line 249, ../scss/master.scss */
-.list.st1 li {
-  display: inline-block;
-}
-/* line 252, ../scss/master.scss */
-.list.st1 li:not(:last-of-type) {
-  margin-right: 0.05em;
-}
-/* line 256, ../scss/master.scss */
-.list.st1 li:not(:first-of-type):not(.break):before {
-  content: "\00B7";
-  display: inline-block;
-  vertical-align: text-top;
-  margin-top: 2px;
-  margin-right: 0.5em;
-  font-size: 0.8em;
-}
+  font-size: 0.9em; }
+  .list.st1 li {
+    display: inline-block; }
+    .list.st1 li:not(:last-of-type) {
+      margin-right: 0.05em; }
+    .list.st1 li:not(:first-of-type):not(.break):before {
+      content: "\00B7";
+      display: inline-block;
+      vertical-align: text-top;
+      margin-top: 2px;
+      margin-right: 0.5em;
+      font-size: 0.8em; }
 
-/* line 268, ../scss/master.scss */
 .list.st2 {
   list-style-type: none;
   margin: 0 0 0.5em;
   padding-left: 0;
   color: #5badc7;
-  font-weight: bold;
-}
-/* line 275, ../scss/master.scss */
-.list.st2 li {
-  display: block;
-}
+  font-weight: bold; }
+  .list.st2 li {
+    display: block; }
 
-/* line 281, ../scss/master.scss */
 .list.st3 {
   list-style-type: none;
   margin: 0.5em 0;
   padding-left: 0;
-  color: #b4aa3c;
-  font-weight: bold;
-}
-/* line 288, ../scss/master.scss */
-.list.st3 a {
-  text-decoration: none;
-}
-@media screen and (min-width: 680px) {
-  /* line 294, ../scss/master.scss */
-  .list.st3 li {
-    display: inline-block;
-  }
-  /* line 297, ../scss/master.scss */
-  .list.st3 li:not(:first-of-type) {
-    margin-left: 0.5em;
-  }
-}
-@media screen and (max-width: 679px) {
-  /* line 305, ../scss/master.scss */
-  .list.st3 li {
-    display: block;
-  }
-  /* line 308, ../scss/master.scss */
-  .list.st3 li:not(:last-of-type) {
-    margin-bottom: 0.3em;
-  }
-}
+  color: #B4AA3C;
+  font-weight: bold; }
+  .list.st3 a {
+    text-decoration: none; }
+  @media screen and (min-width: 680px) {
+    .list.st3 li {
+      display: inline-block; }
+      .list.st3 li:not(:first-of-type) {
+        margin-left: 0.5em; } }
+  @media screen and (max-width: 679px) {
+    .list.st3 li {
+      display: block; }
+      .list.st3 li:not(:last-of-type) {
+        margin-bottom: 0.3em; } }
 
-/* line 316, ../scss/master.scss */
 .logo {
   display: inline-block;
   vertical-align: middle;
@@ -312,31 +209,18 @@ p {
   background-size: 32px;
   background-repeat: no-repeat;
   background-color: #d0c872;
-  background-blend-mode: multiply;
-}
-/* line 330, ../scss/master.scss */
-.logo:hover {
-  background-color: #88c4d7;
-}
+  background-blend-mode: multiply; }
+  .logo:hover {
+    background-color: #88c4d7; }
 
-/* line 335, ../scss/master.scss */
 .logo.github {
-  background-image: url(/styles/i/GitHub-Mark-32px.png);
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 335, ../scss/master.scss */
-  .logo.github {
-    background-image: url(/styles/i/GitHub-Mark-64px.png);
-  }
-}
+  background-image: url(../i/GitHub-Mark-32px.png); }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .logo.github {
+      background-image: url(../i/GitHub-Mark-64px.png); } }
 
-/* line 343, ../scss/master.scss */
 .logo.codepen {
-  background-image: url(/styles/i/codepen-32.png);
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 343, ../scss/master.scss */
-  .logo.codepen {
-    background-image: url(/styles/i/codepen-64.png);
-  }
-}
+  background-image: url(../i/codepen-32.png); }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .logo.codepen {
+      background-image: url(../i/codepen-64.png); } }

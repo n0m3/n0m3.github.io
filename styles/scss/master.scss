@@ -7,7 +7,7 @@ $gold1:   #B4AA3C;
 // Fonts
 %font1 {
   font-family: "nimbus-sans",sans-serif;
-}  
+}
 
 %font2 {
   font-family: "cubano",sans-serif;
@@ -30,8 +30,8 @@ $retina-screen:       "#{$screen} and (-webkit-min-device-pixel-ratio: 2),
 
 // Styles
 *, *:before, *:after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
  }
 
@@ -46,15 +46,15 @@ body {
   padding: 0.3rem 40px 2rem;
   border-left: 4px solid lighten($blue1, 45%);
   color: darken($blue2, 60%);
-  @extend %font1; 
+  @extend %font1;
 
   a {
     color: inherit;
     font-weight: bold;
     text-decoration: underline;
-    
+
     &:hover {
-      color: darken($blue2, 30%); 
+      color: darken($blue2, 30%);
     }
   }
 }
@@ -74,7 +74,7 @@ p {
 
 .title.st1 {
   margin-top: 0.4em;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.25em;
   @extend %font2;
   font-weight: normal;
   line-height: 1;
@@ -85,7 +85,7 @@ p {
   $offset: $white;
   text-shadow:
     -.015em .010em $offset,
-    -.045em .005em $shade; 
+    -.045em .005em $shade;
 
   @media screen and (min-width: 680px) {
     font-size: 4.2rem;
@@ -101,7 +101,7 @@ p {
 
   @media screen and (max-width: 399px) {
     font-size: 1.95rem;
-  }     
+  }
 }
 
 .title.st2 {
@@ -133,11 +133,11 @@ p {
       display: block;
       margin-left: 0;
     }
-  } 
+  }
 
   a {
     text-decoration: none;
-  } 
+  }
 
 }
 
@@ -191,14 +191,14 @@ p {
     -moz-box-flex:  1 1 auto;
     -webkit-flex:  1 1 auto;
     -ms-flex:  1 1 auto;
-    flex:  1 1 auto;    
+    flex:  1 1 auto;
   }
 
   @media screen and (min-width: 680px) {
       flex-wrap: no-wrap;
 
       > div:not(:first-of-type) {
-        margin-left: 4px;       
+        margin-left: 4px;
       }
   }
 
@@ -209,15 +209,15 @@ p {
         width: 100%;
         margin-top: 4px;
       }
-  }  
+  }
 }
 
 .panels.st1 {
-  
+
   > div {
-    padding: 1.6em 1.4em; 
-    background: $blue2; 
-    border: 1px solid darken($blue2, 4%); 
+    padding: 1.6em 1.4em;
+    background: $blue2;
+    border: 1px solid darken($blue2, 4%);
   }
 }
 
@@ -260,7 +260,7 @@ p {
       margin-top: 2px;
       margin-right: 0.5em;
       font-size: 0.8em;
-    }   
+    }
   }
 }
 
@@ -270,7 +270,7 @@ p {
   margin: 0 0 0.5em;
   padding-left: 0;
   color: darken($blue2, 30%);
-  font-weight: bold;  
+  font-weight: bold;
 
   li {
     display: block;
@@ -283,10 +283,10 @@ p {
   margin: 0.5em 0;
   padding-left: 0;
   color: $gold1;
-  font-weight: bold;  
+  font-weight: bold;
 
   a {
-    text-decoration: none;    
+    text-decoration: none;
   }
 
   @media screen and (min-width: 680px) {
@@ -309,7 +309,7 @@ p {
         margin-bottom: 0.3em;
       }
     }
-  }  
+  }
 }
 
 
@@ -333,17 +333,17 @@ p {
 }
 
 .logo.github {
-  background-image: url(/styles/i/GitHub-Mark-32px.png);
+  background-image: url(../i/GitHub-Mark-32px.png);
 
   @media #{$retina-screen} {
-    background-image: url(/styles/i/GitHub-Mark-64px.png);    
+    background-image: url(../i/GitHub-Mark-64px.png);
   }
 }
 
 .logo.codepen {
-  background-image: url(/styles/i/codepen-32.png);
+  background-image: url(../i/codepen-32.png);
 
   @media #{$retina-screen} {
-    background-image: url(/styles/i/codepen-64.png);    
+    background-image: url(../i/codepen-64.png);
   }
 }
